@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8">
+
+	<title>w3m-topnav Test Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./styles/w3m-topnav.css">
+	
+	<script type="text/javascript" src="./js/w3m-topnav.js"></script>
+
+</head>
+
+<body>
+	<div id="page">
+
+		<header class="w3-bar">
+			<button class="w3-bar-item w3-left w3-button w3m-control w3m-open-button" onclick="w3m_openSideMenu()">OPEN</button>
+			<h2 class="w3-bar-item">w3m-topnav New Test Page</h2>
+			<nav class="w3-bar-item w3m w3-right">  <!-- CAN INCLUDE w3-right HERE TO PULL THE MENU RIGHT -->
+				<div class="w3-bar w3-padding-24">
+					
+					<button class="w3-bar-item w3-button w3m-control w3m-close-button" onclick="w3m_closeSideMenu()">Close</button>
+
+					<div class="w3-dropdown-hover">
+						<div class ="w3m-caret-container">
+							<a class="w3-button" href="#">DropDown 1 <i class="w3m-caret fa fa-angle-right"></i></a>
+							<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+						</div>
+						<div class="w3-dropdown-content w3-bar-block w3-card-4">
+							<a class="w3-bar-item w3-button" href="1">DropDown</a>
+							<a class="w3-bar-item w3-button" href="#">With</a>
+							<a class="w3-bar-item w3-button" href="#">No</a>
+							<a class="w3-bar-item w3-button" href="#">SubMenu</a>
+							<a class="w3-bar-item w3-button" href="#">But with some long text too</a>
+						</div><!-- w3-dropdown-content -->
+					</div><!-- w3-dropdown-hover -->
+
+
+					<div class="w3-dropdown-hover w3m-pull-left">  <!-- COULD INCLUDE w3m-pull-left HERE TO PULL ALL SUB MENUS LEFT -->
+						<div class ="w3m-caret-container">
+							<a class="w3-button" href="#">Pulled Left<i class="w3m-caret fa fa-angle-down"></i></a>
+							<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+						</div>
+						<div class="w3-dropdown-content w3-bar-block w3-card-4">
+							<a class="w3-bar-item w3-button" href="#">Link 1</a>
+							<a class="w3-bar-item w3-button" href="#">Link 2</a>
+							<a class="w3-bar-item w3-button" href="#">Link 3</a>
+
+							<div class="w3-dropdown-hover">
+								<div class ="w3m-caret-container">
+									<a class="w3-button" href="2">Dropdown 2.1  <i class="w3m-caret fa fa-angle-right"></i></a>
+									<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+								</div>
+								<div class="w3-dropdown-content w3-bar-block w3-card-4">
+									<a class="w3-bar-item w3-button">link 1</a>
+									<a class="w3-bar-item w3-button">link 2</a>
+								</div>
+							</div>
+							
+							<a class="w3-bar-item w3-button" href="#">Link 4</a>
+							<a class="w3-bar-item w3-button" href="#">Link 5</a>
+						</div><!-- w3-dropdown-content -->
+					</div><!-- w3-dropdown-hover -->
+
+
+					<div class="w3-dropdown-hover">
+						<div class="w3m-caret-container">
+							<a class="w3-button" href="#">DropDown 3 <i class="w3m-caret fa fa-angle-down"></i></a>
+							<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+						</div>
+						<div class="w3-dropdown-content w3-bar-block w3-card-4">
+							<a class="w3-bar-item w3-button" href="#">Link 1</a>
+							<a class="w3-bar-item w3-button" href="#">Link 2</a>
+							<a class="w3-bar-item w3-button" href="#">Link 3</a>
+
+							<div class="w3-dropdown-hover">
+								<div class="w3m-caret-container">
+									<a class="w3-button" href="#">Dropdown 3.1  <i class="w3m-caret fa fa-angle-right"></i></a>
+									<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+								</div>
+								<div class="w3-dropdown-content w3-bar-block w3-card-4">
+									<a class="w3-bar-item w3-button">link 1</a>
+									<a class="w3-bar-item w3-button">link 2</a>
+								</div>
+							</div>
+							
+							<div class="w3-dropdown-hover w3m-pull-left">  <!-- INCLUDE w3m-pull-left HERE TO PULL THIRD LEVEL SUB MENU LEFT -->
+								<div class="w3m-caret-container">
+									<a class="w3-button" href="#">Dropdown 3.2 pull left dropdown <i class="w3m-caret fa fa-angle-right"></i></a>
+									<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+								</div>
+								<div class="w3-dropdown-content w3-bar-block w3-card-4">
+									<a class="w3-bar-item w3-button">link 1</a>
+									<a class="w3-bar-item w3-button">link 2</a>
+								</div>
+							</div>
+
+							<a class="w3-bar-item w3-button" href="#">Link 4</a>
+							<a class="w3-bar-item w3-button" href="#">Link 5</a>
+						</div><!-- w3-dropdown-content -->
+					</div><!-- w3-dropdown-hover -->
+
+					<div class="w3-dropdown-hover">
+						<div class="w3m-caret-container">
+							<span><i class="fa fa-search"></i></span>
+							<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+						</div>
+						<div class="w3-dropdown-content w3-bar-block w3-card-4">
+							<input type="text" class="w3-bar-item w3-input" placeholder="Search..">
+						</div>
+					</div>
+
+					<span class="w3-bar-item">Not a link</span>
+
+					<div class="w3-dropdown-hover">
+						<div class="w3m-caret-container">
+							<a class="w3-button" href="#">Auto Pull left <i class="w3m-caret fa fa-angle-down"></i></a>
+							<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+						</div>
+						<div class="w3-dropdown-content w3-bar-block w3-card-4">
+							<a class="w3-bar-item w3-button" href="#">Link 1</a>
+							<a class="w3-bar-item w3-button" href="#">Link 2</a>
+							<a class="w3-bar-item w3-button" href="#">Link 3</a>
+
+							<div class="w3-dropdown-hover">
+								<div class="w3m-caret-container">
+									<a class="w3-button" href="#">Dropdown 4.1 <i class="w3m-caret fa fa-angle-right"></i></a>
+									<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+								</div>
+								<div class="w3-dropdown-content w3-bar-block w3-card-4">
+									<a class="w3-bar-item w3-button">link 1</a>
+									<a class="w3-bar-item w3-button">link 2</a>
+								</div>
+							</div>
+
+							<div class="w3-dropdown-hover">
+								<div class="w3m-caret-container">
+									<a class="w3-button" href="#">Dropdown 4.2 <i class="w3m-caret fa fa-angle-right"></i></a>
+									<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+								</div>
+								<div class="w3-dropdown-content w3-bar-block w3-card-4">
+									<a class="w3-bar-item w3-button">link 1</a>
+									<a class="w3-bar-item w3-button">link 2</a>
+								</div>
+							</div>
+							
+							<div class="w3-dropdown-hover">
+								<div class="w3m-caret-container">
+									<a class="w3-button" href="#">Dropdown 4.3 <i class="w3m-caret fa fa-angle-right"></i></a>
+									<button onclick="w3m_caretClick(this)" class="w3m-clickable-caret fa fa-angle-right"></button>
+								</div>
+								<div class="w3-dropdown-content w3-bar-block w3-card-4">
+									<a class="w3-bar-item w3-button">link 1</a>
+									<a class="w3-bar-item w3-button">link 2</a>
+								</div>
+							</div>
+
+							<a class="w3-bar-item w3-button" href="#">Link 4</a>
+							<a class="w3-bar-item w3-button" href="#">Link 5 long long long text</a>
+						</div><!-- w3-dropdown-content -->
+					</div><!-- w3-dropdown-hover -->
+
+				</div><!-- w3-bar -->
+
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
+
+	</div><!-- page-->
+
+</body>
+</html>
